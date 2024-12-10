@@ -1,0 +1,18 @@
+<p>@if(isServerRunning){
+<p>Yes server is running</p>
+} @else {
+    <p>No the server is off</p>
+}
+</p>
+<section>
+    <h3>for section</h3>
+    <ul>
+    @for(os of operatingSystems; track os.id) {
+        <li>
+            {{os.name}}
+        </li>
+    }
+    </ul>
+    
+</section>
+
