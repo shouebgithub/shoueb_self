@@ -4,15 +4,16 @@
     <p>No the server is off</p>
 }
 </p>
+<p>User's name is {{name}}</p>
 <section>
-    <h3>for section</h3>
+    <h3 class="hoverover" (mouseover)="onMouseOver()">for section</h3>
     <ul>
     @for(os of operatingSystems; track os.id) {
-        <li>
-            {{os.name}}
+        <li (click)="greet()">
+            {{os.name}}            
         </li>
     }
     </ul>
-    
+    <button (click)="onClick()">button</button>
 </section>
 
