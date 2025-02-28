@@ -1,0 +1,10 @@
+<div class="text-center">
+    <h2>Observable Demo</h2>
+   
+    <ul>
+        @for(item of data; track $index) {
+        <li>{{item}}</li>
+        }
+    </ul>
+    <button class="get_data" (click)="getData()">Get Data</button>
+</div>

@@ -1,0 +1,20 @@
+
+<section>
+    <p>🐢 all the way down  {{itemCount}}</p>
+    <p>This is the new Decrement count {{newCount}}</p>
+</section>
+<!-- <section>
+    <div class="users">
+        <ol>
+             @for(user of users; track user.id) 
+        {
+            <li>{{user.name}}</li>
+        }
+        </ol>
+       
+    </div>
+<div [contentEditable]="isEditable">
+what ever u want u can do here.
+</div>  
+</section> -->
+<app-user name = "Shoueb Ahmed" (decrementEventCounter)="Decrement($event)" occupation = "Software Engineer"  (incrementCountEvent)="countShow($event)"></app-user>  

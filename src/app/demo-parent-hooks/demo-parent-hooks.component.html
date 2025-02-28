@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="d-flex bg-grey flex-column gap-3 text-center">
+             <input class="mx-2" type="text" name="input" #inputEl > 
+        <button (click)="showMsg(inputEl)" class="btn btn-dark">Search</button> 
+    </div>
+<app-lifecyclehooks [msg]="inputval">
+    <!-- <p>This is the projected content</p> -->
+</app-lifecyclehooks>
+</div>

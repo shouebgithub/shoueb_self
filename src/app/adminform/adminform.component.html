@@ -1,0 +1,14 @@
+<form [formGroup]="adminForm"  (ngSubmit)="handleSubmit()">
+    <label for="name">Name:</label>
+    <input type="text" formControlName="name"><br><br>
+    <label for="sex">Sex:</label>
+    <input type="radio"   id="male" value="male" formControlName="sex">
+    <label for="male">Male</label>
+    <input type="radio"  id="female" value="female" formControlName="sex">
+    <label for="female">Female</label> <br><br>
+    <input type="submit" [disabled]="!adminForm.valid" value="Submit">
+</form>
+
+
+<p>Name: {{adminForm.value.name}}</p>
+<p>Sex: {{adminForm.value.sex}}</p>

@@ -1,0 +1,13 @@
+<h2 class="text-center">check the pipes related activities below</h2>
+<p>{{loadmessage | uppercase}}</p>
+<p>{{ourcurrency | currency}}</p>
+<p>The event will occur on {{ mydate | date:'medium' }}.</p>
+<p>The event will occur on {{ mydate | date:'hh:mm' }}.</p>
+<p>The event will occur on {{ mydate | date:'hh:mm':'UTC' }}.</p>
+<p>{{ (isAdmin ? 'Access granted' : 'Access denied') | uppercase }}</p>
+ <!--  pipe has higher priority than ternary operator, find the diff by comparing this with below statement.*/ -->
+<p>{{ isAdmin ? 'Access granted' : 'Access denied' | uppercase }}</p>
+
+<h3>Using custom pipe</h3>
+
+<p>{{sampleword | reversepipe}}</p>

@@ -4,7 +4,7 @@
     <p>No the server is off</p>
 }
 </p>
-<p>User's name is {{name}}</p>
+<p>User's name is {{name}} and he is a {{occupation}}</p>
 <section>
     <h3 class="hoverover" (mouseover)="onMouseOver()">for section</h3>
     <ul>
@@ -12,8 +12,18 @@
         <li (click)="greet()">
             {{os.name}}            
         </li>
-    }
+    }favoriteFramework
     </ul>
     <button (click)="onClick()">button</button>
-</section>
 
+    <button (click)="decrementCount()">Decrement</button>
+</section>
+<section>
+    <label for="framework">
+    favorite Framework: {{favoriteFramework}}
+    <br/>
+    <input [(ngModel)]="favoriteFramework" class="mx-3 m-2" type="text" id="framework">
+</label>
+
+<button (click)="showFramework()">show Framework</button>
+</section>

@@ -1,0 +1,22 @@
+<form class="mx-3" [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+    <label>Name
+      <input type="text" formControlName="name" />
+    </label>
+    <label>Email
+      <input type="email" formControlName="email"/>
+    </label>
+    <button [disabled]="!profileForm.valid" type="submit" >Submit</button>
+  </form>
+
+  <section class="formdata">
+    <h2 class="title">Profile Form</h2>
+    <p class="name">Name: {{profileForm.value.name}}</p>
+    <p class="email">Email: {{profileForm.value.email}}</p>
+  </section>
+
+  <section>
+    <h2 class="text-center">Car listing</h2>
+    <p>{{display}}</p>
+    <h2 class="text-center my-3">Bike Listing</h2>
+    <p>{{showBikes}}</p>
+  </section>

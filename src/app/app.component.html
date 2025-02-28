@@ -1,18 +1,5 @@
-<section>
-    <app-user name = "Shoueb Ahmed" (incrementCountEvent)="countShow($event)"></app-user>
-    <p>🐢 all the way down  {{itemCount}}</p>
-</section>
-<section>
-    <div class="users">
-        <ol>
-             @for(user of users; track user.id) 
-        {
-            <li>{{user.name}}</li>
-        }
-        </ol>
-       
-    </div>
-<div [contentEditable]="isEditable">
-what ever u want u can do here.
-</div>
-</section>
+ 
+
+  <router-outlet />
+
+
